@@ -1,2 +1,6 @@
 # kubernetes
-A repository for kubernetes concepts
+![Architecture](image.png)
+
+
+mongouser
+mongopassword

@@ -1,0 +1,36 @@
+
+What is Kubernetes ?
+Kubernetes is a tool which helps us to manage multiple applications efficiently. 
+It takes care of our applications's -
+   Scalability
+   Availability
+   Load Balancing
+   Container Orchestration
+   Rollouts and Rollbacks
+
+Architecture 
+   Consists of Master and Cluster
+   Clust has multiple woker nodes
+   Worker node is a containerized applications or server
+
+   Master/Control Plane(single)
+    API Server      - Manages worker nodes using APIs 
+    Schedular       - Register new worker nodes
+    ETCD            - Takes care of all the data related to worker nodes 
+    Control Manager - Keeps control of resources and check if everything is working fine
+ 
+   Worker Nodes(multiple)
+    kubectl           - it helps in communication with Master/control plane/k8s
+    pod               - it keeps container or multiple container and manges the resources
+    kube proxy        - takes care of newtworks as each worker node has to connect externally/internally
+    container runtime - helps to run the worker node
+
+Concepts Before Start
+    kubectl     - it helps in communication with Master/control plane/k8s
+    kubermini   - a miniature version of k8s structure using which we can learn k8s
+    config      - configurations of the applications(service urls etc)
+    secrets     - env variable(db pass, port etc)
+    deployment  - deploy the application in pod(a wrapper through which master will connect to this)
+    service     - service will make sure that this node is available for internal network
+
+
